@@ -27,8 +27,6 @@ This will install the runner as `jscodeshift`.
 
 ## Usage (CLI)
 
-See [the website](https://jscodeshift.com/) for full documentation.
-
 The CLI provides the following options:
 
 ```
