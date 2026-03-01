@@ -1,4 +1,4 @@
-# [jscodeshift](https://jscodeshift.com/) [![Support Ukraine](https://img.shields.io/badge/Support-Ukraine-FFD500?style=flat&labelColor=005BBB)](https://opensource.fb.com/support-ukraine) [![Build Status](https://img.shields.io/github/checks-status/facebook/jscodeshift/main?label=build)](https://github.com/facebook/jscodeshift/actions/workflows/test.yml?query=branch%3Amain)
+# [jscodeshift](https://jscodeshift.com/) [![Support Ukraine](https://img.shields.io/badge/Support-Ukraine-FFD500?style=flat&labelColor=005BBB)](https://opensource.fb.com/support-ukraine) [![Build Status](https://img.shields.io/github/checks-status/facebook/jscodeshift/main?label=build)](https://github.com/Unity-Billal-mesloub/jscodeshift/actions/workflows/test.yml?query=branch%3Amain)
 
 
 jscodeshift is a toolkit for running codemods over multiple JavaScript or
@@ -322,10 +322,6 @@ var ast = j.callExpression(
 );
 ```
 
-The signature of each builder function is best learned by having a look at the
-[definition files](https://github.com/benjamn/ast-types/tree/master/src/def)
-or in the babel/types [docs](https://babeljs.io/docs/en/babel-types).
-
 ### Collections and Traversal
 
 In order to transform the AST, you have to traverse it and find the nodes that
@@ -454,8 +450,6 @@ jscodeshift as second argument:
 jscodeshift(source, {...})
 ```
 
-For more details on recast config options, see [here](https://github.com/benjamn/recast/blob/master/lib/options.ts).
-
 ### Unit Testing
 
 jscodeshift comes with a simple utility to allow easy unit testing with [Jest](https://facebook.github.io/jest/), without having to write a lot of boilerplate code. This utility makes some assumptions in order to reduce the amount of configuration required:
@@ -571,10 +565,10 @@ defineInlineTest(transform, /* ... */)
 
 ### Example Codemods
 
-- [react-codemod](https://github.com/reactjs/react-codemod) - React codemod scripts to update React APIs.
-- [js-codemod](https://github.com/cpojer/js-codemod/) - Codemod scripts to transform code to next generation JS.
-- [js-transforms](https://github.com/jhgg/js-transforms) - Some documented codemod experiments to help you learn.
-- [fix-js](https://github.com/anshckr/fix-js) - Codemods to fix some ESLint issues
+ - React codemod scripts to update React APIs.
+ - Codemod scripts to transform code to next generation JS.
+ - Some documented codemod experiments to help you learn.
+ - Codemods to fix some ESLint issues
 
 ### Local Documentation Server
 
@@ -669,6 +663,4 @@ Once this has been added to the configuration
 
 [npm]: https://www.npmjs.com/
 [Mozilla Parser API]: https://developer.mozilla.org/en-US/docs/Mozilla/Projects/SpiderMonkey/Parser_API
-[recast]: https://github.com/benjamn/recast
-[ast-types]: https://github.com/benjamn/ast-types
 [ast-explorer]: http://astexplorer.net/
